@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1">这是一个id选择器标签</div>
+    <div class="box2">这是一个类选择器标签</div>
+    <div>这是一个普通div标签</div>
+    <script>
+        var element_id = document.getElementById('box1');
+        console.log(element_id);
+
+        var element_class = document.getElementsByClassName('box2')[0];
+        console.log(element_class);
+
+        var element_tag = document.getElementsByTagName('div');
+        console.log(element_tag);
+
+        element_id.innerHTML = '<a href="#">这是一个a标签</a>'
+        element_class.innerText = '修改后的id选择器标签文本内容。'
+
+        element_tag.style.color = 'red';
+        element_tag.style.fontsize = '20px';
+        
+
+    </script>
+</body>
+</html>

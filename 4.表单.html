@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>html表单</title>
+</head>
+<body>
+    <form>
+        <!-- 在这个输入框前面加入用户名等提示词的时候可以用span标签，
+         但是一般用label-->
+         <!-- for属性是记录input标签对应的id -->
+        <label for="username">用户名：</label>
+        <input type="text" id="username" placeholder="请输入用户名：">
+        <br>
+        <label for="pwd">密码：</label>
+        <input type="password" id="pwd" placeholder="请输入密码:">
+        <!-- type是password的是暗文显示（不显示字符） -->
+        <br>
+
+        <!-- name相同的只能选一个（单选） -->
+        <!-- radio录音机表示选择 -->
+        <label for="">性别</label>
+        <input type="radio" name="gender">男
+        <input type="radio" name="gender">女
+        <input type="radio" name="gender">其他
+<br>
+        <!-- 多选用checkbox，不能用radio，radio点了就不能取消了 -->
+        <label>爱好</label>
+        <input type="checkbox" name="hobby">唱歌
+        <input type="checkbox"name="hobby">跳舞
+        <input type="checkbox" name="hobby">rap
+        <input type="checkbox" name="hobby">篮球
+        <br><br>
+        <input type="submit">
+
+        <form action="#"></form>
+    </form>
+</body>
+</html>

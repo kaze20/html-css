@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css的导入方式</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 这个是外部引用，href=中放入路径 -->
+
+    <style>
+        p{
+            color: blue;
+            font-size: 20px;
+        }
+        h2{
+            color: orange;
+            font-size:large;
+        }
+
+    </style>
+</head>
+<body>
+    <p>这是一个测试,正在使用内部样式，从head中的style定义</p>
+    <h1 style="color: red; font-size: 30px;">内联样式测试</h1>
+    <h2>内部样式测试2</h2>
+    <h3>使用外部样式，从其他文件中导入进来</h3>
+    <!-- 导入方式：在title下面，写link 然后再href中写路径-->
+     <!-- 优先级是内联样式-内部样式-外部样式 -->
+</body>
+</html>

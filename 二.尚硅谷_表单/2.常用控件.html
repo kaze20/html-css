@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://search.jd.com/search">
+        账户：<input type="text" name="account" value="panglin" maxlength="10">
+        <br> 
+        密码：<input type="password" name="pwd" maxlength="6">
+        <br>  
+
+
+        <!-- input的单选框和复选框必须含有value值，否则不能带走数据 -->
+
+         性别：
+        <input type="radio" name="gender" value="male">男
+        <input type="radio" name="gender" value="female">女
+
+        爱好：
+        <input type="checkbox" name="hobby" value="sing">唱
+        <input type="checkbox" name="hobby" value="dance">跳
+        <input type="checkbox" name="hobby" value="rap" checked>rap
+        <!-- checked是默认勾选 -->
+        <br>
+        其他：
+        <textarea name="other" cols="22" rows="10"></textarea>
+
+        籍贯：
+        <br>
+        <input type="submit">
+        <!-- 重置按钮 -->
+        <input type="reset">
+
+
+    </form>
+</body>
+</html>

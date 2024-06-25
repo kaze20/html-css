@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        .father{
+            background-color: aqua;
+            /* height: 150px; */
+            border: solid 3px;
+                     /* 为了防止父元素因为过低的高度设置而坍塌 ,
+                     设置以下语句，同事在设置过小时，也会隐藏掉多余的元素*/
+            overflow: hidden;
+   
+        }
+        .left-son{
+            /* 可以使用这个快捷键快速设置宽高：h100+w100 */
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+
+            /* 设置左浮动： */
+            float: left;
+        }
+        .right-son{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+             /* 设置右浮动： */
+            float: right;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="right-son">右浮动</div>
+    </div>
+</body>
+</html>

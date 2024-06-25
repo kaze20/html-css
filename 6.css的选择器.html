@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color: aqua ;
+        }
+        .highlight{
+            color: pink;
+        }
+        #header {
+            font-size: 50px;
+        }
+
+        /* 通用选择器，是用*来实现 */
+        *{
+            font-style: italic;;
+        }
+
+        /* 子元素选择器 */
+        /* 仅仅是子代，不是后代 */
+        .father > .son {
+            color: blue;
+        }
+        /* 后代选择器 */
+        .father p{
+            color: brown;
+        }
+
+        /* 相邻元素选择器（只给他下面的一个的对应元素设置） */
+        h1 + p{
+            background-color: red;
+        }
+
+        /* 伪元素选择器 */
+        p span.price::before{
+            content: '$';
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>不同类型的元素选择器</h1>
+    <h2>这是一个示例</h2>
+    <h3 class="highlight">这是一个类选择器</h3>
+    <h4 id="header">这是一个id选择器</h4>
+
+    <div class="father">
+        <p>这是父标签的一句话</p>
+        <p class="son">这是子标签的一句话</p>
+        <div>
+            <p class="grandson">这是子标签的一句话</p>
+        </div>
+    </div>
+    <br><br>
+    <p>这是一个普通的p标签</p>
+    <h1>这是一个普通的p标签</h1>
+    <p>这是一个普通的p标签</p>
+    <p>这是一个普通的p标签</p>
+    <p>今天我赚了 <span class="price">100</span></p>
+    
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hello(){
+            console.log("hello world!")
+        }
+
+        hello();
+
+        // 接收参数
+        function with_return_hello(){
+            return "hello world!返回了"
+
+        }
+        let a = with_return_hello();
+        console.log(a);
+        
+        // 带参数的返回
+        function with_return_lin(name){
+             return "hello world!返回"+name;
+        }
+        let b = with_return_lin('woc');
+        console.log('lin, ' + b);
+    </script>
+</body>
+</html>
